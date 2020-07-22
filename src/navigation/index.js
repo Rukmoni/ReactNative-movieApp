@@ -3,9 +3,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ScreenHome from '../screens/ScreenHome';
 import ScreenDownloads from '../screens/ScreenDownloads';
+import ScreenProfile from '../screens/ScreenProfile';
+import StackProfile from './stacks/StackProfile';
 import  colors  from '../constants/colors';
 import { Entypo,Feather,MaterialCommunityIcons} from '@expo/vector-icons'; 
- 
+
 const Tab = createBottomTabNavigator();
 
 export default function RootNavigator(){
@@ -34,7 +36,7 @@ export default function RootNavigator(){
                tabBarIcon:({color,size})=>(
                 <MaterialCommunityIcons name="download" size={24} color="white" />
                )}}/>
-             <Tab.Screen name="Profile" component={ScreenDownloads} options={{
+             <Tab.Screen name="Profile" component={StackProfile} options={{
                tabBarIcon:({color,size})=>(
                 <MaterialCommunityIcons name="face-profile" size={24} color="white" />
                )}}/>

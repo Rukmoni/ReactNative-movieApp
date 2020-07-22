@@ -3,7 +3,7 @@ import { StatusBar } from 'react-native';
 import 'react-native-gesture-handler';
 import { AppLoading } from 'expo';
 import { func } from './src/constants';
-import RootNavigator from './src/navigation/RootNavigator';
+import RootNavigator from './src/navigation';
 
 export default class App extends React.Component {
   constructor(props) {

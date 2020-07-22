@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from 'react-navigation';
 import { colors } from '../constants';
+import {BottomTabBarOptions} from './defaultOptions'
 
 // grabs stacks
 import StackHome from './StackHome';
@@ -16,14 +17,7 @@ export default createBottomTabNavigator(
   },
   {
     initialRouteName: 'StackHome',
-    tabBarOptions: {
-      activeTintColor: colors.white,
-      inactiveTintColor: colors.inactiveGrey,
-      showLabel: false,
-      style: {
-        backgroundColor: colors.tabBackground,
-        borderTopWidth: 0
-      }
+    tabBarOptions: {BottomTabBarOptions   
     }
   }
 );
