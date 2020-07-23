@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Image, StyleSheet, TouchableOpacity, Text, View } from 'react-native';
-import { withNavigation } from 'react-navigation';
+
 import { colors, device, fonts, gStyle, images } from '../constants';
 
 // icons
-import SvgPlus from './icons/Svg.Plus';
+import SvgPlus from '../assets/svg/Svg.Plus';
 
 const ICON_SIZE = 74;
 
@@ -25,7 +25,7 @@ const HeaderAccounts = ({ navigation }) => (
 
       <TouchableOpacity
         activeOpacity={0.7}
-        onPress={() => navigation.navigate('ModalAddProfile')}
+        onPress={() => navigation.navigate('AddProfile')}
         style={styles.containerUser}
       >
         <View style={styles.containerPlus}>
@@ -37,7 +37,7 @@ const HeaderAccounts = ({ navigation }) => (
 
     <TouchableOpacity
       activeOpacity={0.7}
-      onPress={() => navigation.navigate('ModalManageProfiles')}
+      onPress={() => navigation.navigate('EditProfile')}
       style={styles.containerEditProfiles}
     >
       <Text style={styles.editProfilesText}>Edit Profiles</Text>
@@ -119,4 +119,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default withNavigation(HeaderAccounts);
+export default HeaderAccounts;

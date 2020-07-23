@@ -5,7 +5,7 @@ import Constants from 'expo-constants';
 import { colors, fonts, gStyle } from '../constants';
 
 // components
-import HeaderAccounts from '../components/HorizontalScroller';
+import HeaderAccounts from '../components/HeaderAccounts';
 import TouchLineItem from '../components/TouchLineItem';
 
 // icons
@@ -26,7 +26,7 @@ const ScreenProfile = ({ navigation }) => (
       <SvgBackground />
     </View>
 
-    <HeaderAccounts />
+    <HeaderAccounts navigation={navigation}/>
 
     <ScrollView>
       <TouchLineItem

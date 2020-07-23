@@ -11,6 +11,8 @@ import { colors, images } from '../../constants';
 import ScreenProfile from '../../screens/ScreenProfile';
 import ScreenProfileSettings from '../../screens/ScreenProfileSettings';
 import ScreenProfileWatchlist from '../../screens/ScreenProfileWatchlist';
+import ModalAddProfile from '../../screens/ModalAddProfile';
+import ModalEditProfile from '../../screens/ModalEditProfile';
 
 /* const Icon = ({ focused }) => {
   const borderColor = focused ? { borderColor: colors.white } : {};
@@ -27,16 +29,39 @@ Icon.propTypes = {
   focused: PropTypes.bool.isRequired
 }; */
 const Stack = createStackNavigator();
+const ProfileStack = createStackNavigator();
+const ModelStack=createStackNavigator();
+function ProfileScreenStack(){
+  return(
+    <ProfileStack.Navigator
+    screenOptions={{
+      headerShown: false
+      
+    }}>
+       <ProfileStack.Screen name="Profile" component={ScreenProfile}/>
+    <ProfileStack.Screen name="ProfileAppSettings" component={ScreenProfileSettings}/>
+    <ProfileStack.Screen name="ProfileWatchlist" component={ScreenProfileWatchlist}/>
+
+    </ProfileStack.Navigator>
+  )
+}
+function ModelsScreenStack(){
+  <ModelStack.Navigator>
+    <ModelStack.Screen name="AddProfile" component={ModalAddProfile}/>
+    <ModelStack.Screen name="EditProfile" component={ModalEditProfile}/>
+  </ModelStack.Navigator>
+}
 function StackProfile(){
   return(
     
-  <Stack.Navigator
+  <Stack.Navigator mode="modal"
   screenOptions={{
     headerShown: false
+    
   }}>
-    <Stack.Screen name="Profile" component={ScreenProfile}/>
-    <Stack.Screen name="ProfileAppSettings" component={ScreenProfileSettings}/>
-    <Stack.Screen name="ProfileWatchlist" component={ScreenProfileWatchlist}/>
+    <Stack.Screen name="Profile" component={ProfileScreenStack}/>
+    <Stack.Screen name="AddProfile" component={ModalAddProfile}/>
+    <Stack.Screen name="EditProfile" component={ModalEditProfile}/>
   </Stack.Navigator>
 
   )
