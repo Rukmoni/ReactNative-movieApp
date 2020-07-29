@@ -16,7 +16,7 @@ export default function RootNavigator(){
         <NavigationContainer>
         <Tab.Navigator
         tabBarOptions={{
-            activeTintColor: colors.white,
+            activeTintColor: colors.activeTintColor,
             inactiveTintColor: colors.inactiveGrey,
             showLabel:false,
             style: {
@@ -27,19 +27,19 @@ export default function RootNavigator(){
            <Tab.Screen name="Home" component={ScreenHome} 
            options={{
                tabBarIcon:({color,size})=>(
-                <Entypo name="home" size={24} color="white" />
+                <Entypo name="home" size={24} color={color} />
                )}}/>
              <Tab.Screen name="Search" component={ScreenSearch} options={{
                tabBarIcon:({color,size})=>(
-                <Feather name="search" size={24} color="white" />
+                <Feather name="search" size={24} color={color} />
                )}}/>
              <Tab.Screen name="Downloads" component={ScreenDownloads} options={{
                tabBarIcon:({color,size})=>(
-                <MaterialCommunityIcons name="download" size={24} color="white" />
+                <MaterialCommunityIcons name="download" size={24} color={color} />
                )}}/>
              <Tab.Screen name="Profile" component={StackProfile} options={{
                tabBarIcon:({color,size})=>(
-                <MaterialCommunityIcons name="face-profile" size={24} color="white" />
+                <MaterialCommunityIcons name="face-profile" size={24} color={color} />
                )}}/>
         </Tab.Navigator>
         </NavigationContainer>
