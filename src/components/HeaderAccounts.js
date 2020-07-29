@@ -13,14 +13,14 @@ const HeaderAccounts = ({ navigation }) => (
   <View style={styles.container}>
     <View style={styles.containerAccounts}>
       <View style={styles.containerUser}>
-        <Image source={images.stormtrooper} style={styles.avatar} />
-        <Text style={[styles.username, styles.usernameActive]}>Caleb</Text>
+        <Image source={images.yoda} style={styles.avatar} />
+        <Text style={[styles.username, styles.usernameActive]}>yoda</Text>
         <View style={styles.avatarActive} />
       </View>
 
       <View style={styles.containerUser}>
-        <Image source={images.elsa} style={styles.avatar} />
-        <Text style={styles.username}>Kim</Text>
+        <Image source={images.ironMan} style={styles.avatar} />
+        <Text style={styles.username}>Sana</Text>
       </View>
 
       <TouchableOpacity

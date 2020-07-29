@@ -8,8 +8,8 @@ const logoStarWars = require('../assets/images/logo/star-wars.png');
 
 // slides
  const slideAvatar = require('../../assets/images/slides/avatar.png');
-const slideAvengersEndgame = require('../../assets/images/slides/avengers-endgame.png');
-const slideCaptainMarvel = require('../../assets/images/slides/captain-marvel.png');
+const slideAvengersEndgame = require('../../assets/images/slides/frozen2.png');
+const slideCaptainMarvel = require('../../assets/images/slides/Aladdin.png');
 const slideStarWarsMandalorian = require('../../assets/images/slides/star-wars-mandalorian.png');
 
 // movies

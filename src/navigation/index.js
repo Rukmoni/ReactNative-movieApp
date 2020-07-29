@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ScreenHome from '../screens/ScreenHome';
 import ScreenDownloads from '../screens/ScreenDownloads';
+import ScreenSearch from '../screens/ScreenSearch';
 import ScreenProfile from '../screens/ScreenProfile';
 import StackProfile from './stacks/StackProfile';
 import  colors  from '../constants/colors';
@@ -28,11 +29,11 @@ export default function RootNavigator(){
                tabBarIcon:({color,size})=>(
                 <Entypo name="home" size={24} color="white" />
                )}}/>
-             <Tab.Screen name="Search" component={ScreenDownloads} options={{
+             <Tab.Screen name="Search" component={ScreenSearch} options={{
                tabBarIcon:({color,size})=>(
                 <Feather name="search" size={24} color="white" />
                )}}/>
-             <Tab.Screen name="Downloads" component={ScreenHome} options={{
+             <Tab.Screen name="Downloads" component={ScreenDownloads} options={{
                tabBarIcon:({color,size})=>(
                 <MaterialCommunityIcons name="download" size={24} color="white" />
                )}}/>

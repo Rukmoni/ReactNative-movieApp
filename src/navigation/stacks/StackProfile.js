@@ -38,7 +38,7 @@ function ProfileScreenStack(){
       headerShown: false
       
     }}>
-       <ProfileStack.Screen name="Profile" component={ScreenProfile}/>
+    <ProfileStack.Screen name="Profile" component={ScreenProfile}/>
     <ProfileStack.Screen name="ProfileAppSettings" component={ScreenProfileSettings}/>
     <ProfileStack.Screen name="ProfileWatchlist" component={ScreenProfileWatchlist}/>
 

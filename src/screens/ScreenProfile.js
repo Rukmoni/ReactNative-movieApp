@@ -8,7 +8,6 @@ import { colors, fonts, gStyle } from '../constants';
 import HeaderAccounts from '../components/HeaderAccounts';
 import TouchLineItem from '../components/TouchLineItem';
 
-// icons
 import SvgBackground from '../assets/svg/Svg.Background';
 
 const alertSignOut = () => {
