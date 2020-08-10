@@ -4,7 +4,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ScreenHome from '../screens/ScreenHome';
 import ScreenDownloads from '../screens/ScreenDownloads';
 import ScreenSearch from '../screens/ScreenSearch';
-import ScreenProfile from '../screens/ScreenProfile';
 import StackProfile from './stacks/StackProfile';
 import  colors  from '../constants/colors';
 import { Entypo,Feather,MaterialCommunityIcons} from '@expo/vector-icons'; 

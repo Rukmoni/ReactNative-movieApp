@@ -6,8 +6,8 @@ const SvgBackground = () => (
     <Defs>
       <LinearGradient id="c" x1="100%" y1="70%" x2="0%" y2="30%">
         <Stop stopColor="#0b0d15" offset="0" />
-        <Stop stopColor="#030C2E" offset="48%" />
-        <Stop stopColor="#030C2E" offset="52%" />
+        <Stop stopColor="#24040C" offset="48%" />
+        <Stop stopColor="#24040C" offset="52%" />
         <Stop stopColor="#0b0d15" offset="100%" />
       </LinearGradient>
     </Defs>

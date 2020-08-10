@@ -5,18 +5,18 @@ export default {
   black50: 'rgba(0, 0, 0, 0.5)',
   white: '#fff',
 
-  background: '#0b0d15',
-  tabBackground: '#000721',
+  background: '#140106',
+  tabBackground: '#140106',
   heading: '#cacaca',
-  categoryBorder: '#384569',
-  categoryGradStart: '#0b173d',
-  categoryGradEnd: '#204c9a',
+  categoryBorder: '#461A25',
+  categoryGradStart: '#140106',
+  categoryGradEnd: '#1A0208',
   profileBackground: '#50525d',
   profileEditBackground: '#404249',
   storageBlue: '#3070cb',
 
   inactiveGrey: '#a4a3a2',
-
+  activeTintColor:'#FF3365',
   // shared
   infoGrey: '#a4a4a4',
 

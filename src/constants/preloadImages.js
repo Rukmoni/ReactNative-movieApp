@@ -1,5 +1,5 @@
 // logos
-
+const logoCiniema=require('../assets/images/logo/cinema.png');
 const logoDisney = require('../assets/images/logo/disney.png');
 const logoMarvel = require('../assets/images/logo/marvel.png');
 const logoNatGeo = require('../assets/images/logo/national-geographic.png');
@@ -49,6 +49,7 @@ const yoda = require('../../assets/images/profiles/yoda.jpg');
 
 export default {
   // logos
+  logoCiniema,
   logoDisney,
   logoMarvel,
   logoNatGeo,

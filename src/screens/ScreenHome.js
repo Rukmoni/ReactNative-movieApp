@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, View, ScrollView, StyleSheet } from "react-native";
+import { Text, View, ScrollView, StyleSheet,Image } from "react-native";
 import SvgBackground from "../../assets/svg/Svg.Background";
 import SvgDisneyPlusLogo from "../../assets/svg/Svg.DisneyPlusLogo";
-import { gStyle, device } from "../constants";
+import { gStyle, device, images } from "../constants";
 //components
 import Categories from '../components/Categories';
 import HorizontalScroller from '../components/HorizontalScroller';
@@ -14,11 +14,11 @@ export default function ScreenHome({ navigation }) {
   return (
     <View style={gStyle.container}>
       <View style={gStyle.posAbsolute}>
-        <SvgBackground />
+       
       </View>
       <ScrollView>
         <View style={styles.containerHeader}>
-          <SvgDisneyPlusLogo />
+        <Image source={images.logoCiniema} style={styles.logo} />
         </View>
         <SlideShow/>
         <Categories />
@@ -42,7 +42,14 @@ ScreenHome.propTypes = {
 const styles = StyleSheet.create({
   containerHeader: {
     alignItems: "center",
-    marginBottom: 8,
-    paddingTop: device.iPhoneX ? 30 : 6,
+    marginBottom: 2,
+    paddingTop: device.iPhoneX ? 28 : 6,
   },
+  logo:{
+    width:140,
+    height:140,
+    
+    overflow: 'hidden',
+    resizeMode: 'contain',
+  }
 });
