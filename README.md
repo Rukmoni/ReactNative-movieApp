@@ -54,25 +54,14 @@ Run Client :`expo start`
 - upgraded to [Expo SDK 38](https://blog.expo.io/expo-sdk-38-is-now-available-dd5770f066a6)
 - started with [React Navigation v5](https://reactnavigation.org/docs/getting-started)
 - iOS and Android
-- Tab Navigation (stacks created)
+- Bottpm Tab Navigation (stacks created)
   - Home
-    - Horizontal Album component
-    - Album Screen
-      - animation opacity on header
-      - scroll sticky of shuffle button
-      - current song playing shows in album list view
-    - Album More Options (added by [@bidah](https://github.com/bidah))
-      - blur view
-      - SafeAreaView example
-      - action list with supporting icons
-    - Header animation on scroll event
-      - animation opacity on iPhoneX notch
-      - animation opacity on cog icon
+    - Banner Horizontal Banner
+    - Categories Slider
+    - Horizontal Slider Component[ with mock data]
   - Search
-    - Sticky search bar (animated width)
-    - Playlists sections added (with mock data)
-  - Library
-    - Menu items from mock data
-  - Custom Bar for Music Player added to `<BottomTabBar />`
-- Modals (bottom to top)
-  - Music Player
+    - Need to add screen
+  - Download Screen
+    - Added Template Screen
+  - Profile Stack (stacks created)
+- started with Expo SDK 37
