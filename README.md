@@ -6,28 +6,31 @@ Inspired by disney+  movie app
 
 
 <p align="center">
-  <img src="assets/screenshots/homepage.png?raw=true" />
+  <img src="assets/screenshots/spashpage.png?raw=true" />
 </p>
 
 <p align="center">
-  <img src="assets/screenshots/splashpage.png?raw=true" />
+  <img src="assets/screenshots/homepage.png?raw=true" />
 </p>
+
 
 ## Table of Contents
 
 - [Install & Build](#install--build)
 - [Stats](#stats)
-- [Linting](#linting)
-- [Expo Web](#expo-web)
+- [Features](#features)
 - [Demo & Release Notes](#release-notes)
 
 ## Install & Build
 
-Install: `yarn install`
+# clone
+`git@github.com:Rukmoni/captialist--game.git`
 
-Expo CLI: `npm install -g expo-cli` (if not already installed)
+Access  : `cd captialist--game`
 
-Run Project Locally: `expo start`
+Install : `npm install`
+
+Run Client :`expo start`
 
 ## Stats
 
